@@ -21,7 +21,7 @@ There are **3** points possible in Iteration 1:
 
 Use TDD to create a `Photograph` and an `Artist` class that respond to the following interaction pattern.
 
-For `age_at_death`, assume an artist was born and died on the same day.
+For `age_at_death`->`died`, assume an artist was born and died on the same day.
 
 ```ruby
 pry(main)> require './lib/photograph'

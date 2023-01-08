@@ -3,12 +3,13 @@ require './lib/photograph'
 
 RSpec.describe Photograph do 
  let(:photograph) { Photograph.new(attributes) }
- let(:attributes) {{
-    id: "1",
-    name: "Rue Mouffetard, Paris (Boy with Bottles)",
-    artist_id: "4",
-    year: "1954"
-  }}
+ let(:attributes) do {
+      id: "1",
+      name: "Rue Mouffetard, Paris (Boy with Bottles)",
+      artist_id: "4",
+      year: "1954"
+    }
+  end
 
   describe "#initialize" do
     it "exists" do
@@ -22,7 +23,4 @@ RSpec.describe Photograph do
       expect(photograph.year).to eq("1954")
     end
   end
-
-
-  # expect().to eq()
 end

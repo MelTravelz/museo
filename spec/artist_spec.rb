@@ -3,13 +3,14 @@ require './lib/artist'
 
 RSpec.describe Artist do 
   let(:artist) { Artist.new(attributes) }
-  let(:attributes) {{
-    id: "2",
-    name: "Ansel Adams",
-    born: "1902",
-    died: "1984",
-    country: "United States"
-  }}
+  let(:attributes) do {
+      id: "2",
+      name: "Ansel Adams",
+      born: "1902",
+      died: "1984",
+      country: "United States"
+    }
+  end
 
   describe "#initialize" do
     it "exists" do
